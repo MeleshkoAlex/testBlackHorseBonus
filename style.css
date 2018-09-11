@@ -1,0 +1,254 @@
+
+/* Margin and padding resets
+------------------- */
+    
+html {font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;outline:none}
+
+/* HTML5 display definitions
+------------------- */
+
+article,aside,details,figcaption,figure,footer,header,main,nav,section,summary {display:block}
+
+audio,canvas,progress,video {display:inline-block;vertical-align:baseline}
+audio:not([controls]) {display:none;height:0}
+
+[hidden],template {display:none}
+
+/* Links
+------------------- */
+
+a {background:transparent;text-decoration:underline}
+a:active,a:hover {outline:0;text-decoration:none}
+
+/* Lists
+------------------- */
+   
+ol, ul {list-style:none}
+
+/* Text-level semantics
+------------------- */
+
+abbr[title] {border-bottom:1px dotted}
+
+b,strong {font-weight:bold}
+
+dfn {font-style:italic}
+
+mark {background:#ff0;color:#000}
+
+small {font-size:80%}
+
+sub,sup {font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+
+sup {top:-0.5em}
+
+sub {bottom:-0.25em}
+
+/* Embedded content
+------------------- */
+
+img {border:0;max-width:100%}
+
+svg:not(:root) {overflow:hidden}
+
+figure {margin:1em 40px}
+
+hr {-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+
+pre {overflow:auto}
+
+code,kbd,pre,samp {font-family:monospace, monospace;font-size:100%}
+
+/* Forms
+------------------- */
+
+button,input,optgroup,select,textarea {color:inherit;font:inherit;margin:0}
+
+button {overflow:visible}
+
+button,select {text-transform:none}
+
+button,html input[type="button"],input[type="reset"],input[type="submit"] {-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled] {cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner {border:0;padding:0}
+
+input {line-height:normal;outline:none}
+input[type="checkbox"],input[type="radio"] {box-sizing:border-box;padding:0}
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {height:auto}
+input[type="search"] {-webkit-appearance: textfield;-moz-box-sizing: content-box;-webkit-box-sizing: content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {-webkit-appearance:none}
+
+fieldset {border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}
+
+legend {border:0;padding:0}
+
+textarea {overflow:auto}
+
+optgroup {font-weight:bold}
+
+blockquote, q {quotes:none}
+blockquote:before, blockquote:after, q:before, q:after {content:'';content:none}
+
+/* Tables
+------------------- */
+
+table {border-collapse:collapse;border-spacing:0}
+
+td,th {padding:0}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html {
+  font-size:14px;
+  font-weight: bold; 
+}
+.wrap{
+	font-size: 12px;
+}
+.red{
+	background: #FF0000;
+}
+.yellow{
+	background: #FFDD00;
+}
+.green{
+	background: #008000;
+}
+.wrap-2{
+	margin: auto;
+}
+.wrap{
+	display: flex;
+	height: 100vh;
+}
+.block-chart{
+	position: relative;
+	width: 500px;
+	height: 300px;
+	margin: 0 0 10px 10px;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;	
+	display: flex;
+	flex-direction: column-reverse;
+}
+.block-chart:before{
+	content: '0';
+	position: absolute;
+	left: -18px;
+	bottom: -27px;
+}
+/*********L****************/
+.chart-item{
+	width: 8px;
+	margin: 0 6px;
+}
+/*********L****************/
+.lebron{
+	display: flex;
+
+}
+.block-chart-item{
+	display: flex;
+	align-items: flex-end;
+}
+/********** LINE x *********/
+.line-x li{
+	margin:0 7px;
+}
+/*********L****************/
+.line-x li:nth-of-type(9){
+	margin-right: 7.5px;
+}
+.line-x li:nth-of-type(n+10){
+	margin:0 4px;
+}
+.line-x>li:before{
+	width: 2px;
+	height: 6px;
+	right:calc(50% - 1px);
+	top: -10px
+}
+.line-y>li,.line-x>li{
+	position: relative;
+}
+
+.line-y>li:before,.line-x>li:before{
+	position: absolute;
+	content: '';
+	background: #000;
+}
+
+.line-y>li:before{
+	width: 6px;
+	height: 2px;
+	top:calc(50% - 1px);
+	right: -10px	
+}
+.line-y{
+	transform:translateY(-52px) 
+}
+.line-y>li:first-child{
+	margin-bottom: 0px;
+}
+.line-y{
+	display: flex;
+	flex-direction: column-reverse;
+}
+.line-y li{
+	margin: 35px 0 0 0;
+}
+.line-x{
+	display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
